@@ -190,7 +190,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 9ed84516dbb1c5d46972d14e07c9eeb2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -243,7 +243,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8342001578666985906}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 3
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -286,7 +286,39 @@ MonoBehaviour:
   m_ControlsChangedEvent:
     m_PersistentCalls:
       m_Calls: []
-  m_ActionEvents: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 6c41bbe3-4307-468c-9459-f40e0da196a6
+    m_ActionName: Movement/MovementDirection[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 7946de0a-3da1-4995-a870-3a2e406d50f5
+    m_ActionName: Movement/Jump[/Keyboard/space]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 85825b9b-cd1a-407f-a4b2-4d93a0b79a5a
+    m_ActionName: Movement/Interact[/Keyboard/e]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 87a3baac-aa1e-4616-8e56-e516fffb5dd7
+    m_ActionName: Movement/Sprint[/Keyboard/shift]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 2505ff70-cbfe-450a-87ff-9e8ef8bdf8c5
+    m_ActionName: Movement/Look[/Mouse/delta]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: Basic
   m_DefaultActionMap: Movement
@@ -304,12 +336,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61df43ad6bb222941b4b9d1da593e061, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_look: {fileID: 3559541592275859211, guid: d078369a659d7244ba27cc7c8f8b5ab4, type: 3}
+  m_movement: {fileID: 7334906688616569380, guid: d078369a659d7244ba27cc7c8f8b5ab4, type: 3}
+  m_sprint: {fileID: 9180665940429831075, guid: d078369a659d7244ba27cc7c8f8b5ab4, type: 3}
   m_floorMask:
     serializedVersion: 2
     m_Bits: 64
   m_feet: {fileID: 2991552808242169204}
-  m_look: {fileID: 3559541592275859211, guid: d078369a659d7244ba27cc7c8f8b5ab4, type: 3}
-  m_movement: {fileID: 7334906688616569380, guid: d078369a659d7244ba27cc7c8f8b5ab4, type: 3}
-  m_movementSpeed: 10
+  m_movementSpeed: 5
   m_rotationSpeed: 5
-  m_jumpForce: 10
+  m_jumpForce: 30
